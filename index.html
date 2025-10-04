@@ -4,46 +4,114 @@
   <meta charset="UTF-8">
   <title>Data Analyst Portfolio - mdeepa12</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; }
-    h1 { color: #2c3e50; }
-    p { color: #555; }
-    .project { margin-bottom: 30px; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    a { color: #0077cc; text-decoration: none; font-weight: bold; }
-    a:hover { text-decoration: underline; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.3rem;
+      color: #2c3e50;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .card a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    footer a {
+      color: #1abc9c;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <h1>👋 Hi, I'm Deepa</h1>
-  <p>Welcome to my <strong>Data Analyst Portfolio</strong>. Here I showcase projects in SQL, Python, and BI tools.</p>
+  <header>
+    <h1>👋 Hi, I'm Deepa</h1>
+    <p>Welcome to my <strong>Data Analyst Portfolio</strong> — showcasing SQL, Python, and BI projects.</p>
+  </header>
 
-  <div class="project">
-    <h2>📊 SQL Case Study – Chinook Database</h2>
-    <p>Analyzed music store sales data using SQL (joins, window functions, aggregations).</p>
-    <a href="01-SQL-Chinook/README.md">View Project →</a>
-  </div>
+  <main class="container">
+    <div class="card">
+      <h2>📊 SQL Case Study – Chinook</h2>
+      <p>Analyzed music store sales using SQL joins, aggregations, and window functions.</p>
+      <a href="01-SQL-Chinook/README.md">View Project →</a>
+    </div>
 
-  <div class="project">
-    <h2>🐍 Python EDA – Airbnb NYC</h2>
-    <p>Cleaned and explored Airbnb dataset using Pandas and Seaborn. Found insights on pricing and demand trends.</p>
-    <a href="02-Python-Airbnb-EDA/README.md">View Project →</a>
-  </div>
+    <div class="card">
+      <h2>🐍 Python EDA – Airbnb NYC</h2>
+      <p>Data cleaning & exploratory analysis with Pandas and Seaborn to find pricing insights.</p>
+      <a href="02-Python-Airbnb-EDA/README.md">View Project →</a>
+    </div>
 
-  <div class="project">
-    <h2>📈 Dashboard – Power BI</h2>
-    <p>Built an interactive dashboard to track KPIs with drilldowns and filters.</p>
-    <a href="03-Dashboard-PowerBI/README.md">View Project →</a>
-  </div>
+    <div class="card">
+      <h2>📈 Dashboard – Power BI</h2>
+      <p>Interactive dashboard with KPIs, drilldowns, and filters for dynamic storytelling.</p>
+      <a href="03-Dashboard-PowerBI/README.md">View Project →</a>
+    </div>
 
-  <div class="project">
-    <h2>⚙️ ETL Pipeline – Retail Data</h2>
-    <p>Developed an end-to-end workflow with Python, PostgreSQL, SQL, and Power BI.</p>
-    <a href="04-ETL-Pipeline-Retail/README.md">View Project →</a>
-  </div>
+    <div class="card">
+      <h2>⚙️ ETL Pipeline – Retail Data</h2>
+      <p>End-to-end ETL workflow with Python, PostgreSQL, SQL queries, and Power BI dashboard.</p>
+      <a href="04-ETL-Pipeline-Retail/README.md">View Project →</a>
+    </div>
+  </main>
 
-  <hr>
-  <p>📬 Connect with me: 
-    <a href="https://linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a> | 
-    <a href="https://github.com/mdeepa12">GitHub</a>
-  </p>
+  <footer>
+    <p>📬 Connect with me: 
+      <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a> | 
+      <a href="https://github.com/mdeepa12" target="_blank">GitHub</a>
+    </p>
+  </footer>
 </body>
 </html>
