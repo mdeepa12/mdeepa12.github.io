@@ -9,13 +9,34 @@
     header { background: #2c3e50; color: white; padding: 2rem; text-align: center; }
     header h1 { margin: 0; }
     header p { font-size: 1.2rem; margin-top: 0.5rem; max-width: 800px; margin-left: auto; margin-right: auto; }
-    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 2rem; }
-    .project-card { background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1rem; transition: transform 0.2s; }
-    .project-card:hover { transform: translateY(-5px); }
-    .project-card img { width: 100%; border-radius: 6px; margin-bottom: 1rem; }
-    .project-card h2 { margin: 0.5rem 0; font-size: 1.2rem; }
-    .project-card p { font-size: 0.95rem; line-height: 1.4; }
-    .project-card a { display: inline-block; margin-top: 0.5rem; text-decoration: none; color: #2980b9; font-weight: bold; }
+    
+    .projects { display: flex; flex-direction: column; gap: 2rem; padding: 2rem; max-width: 900px; margin: auto; }
+    .project-card { 
+      display: block; 
+      text-decoration: none; 
+      color: inherit; 
+      background: white; 
+      border-radius: 8px; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+      padding: 1rem; 
+      transition: transform 0.2s, box-shadow 0.2s; 
+    }
+    .project-card:hover { 
+      transform: translateY(-5px); 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+    }
+    .project-card img { 
+      width: 100%; 
+      height: 220px; 
+      object-fit: contain; 
+      border-radius: 6px; 
+      margin-bottom: 1rem; 
+      background: #fafafa; 
+      padding: 5px; 
+    }
+    .project-card h2 { margin: 0.5rem 0; font-size: 1.3rem; }
+    .project-card p { font-size: 1rem; line-height: 1.5; }
+    
     footer { text-align: center; padding: 1.5rem; background: #2c3e50; color: white; }
     footer a { color: #1abc9c; margin: 0 0.5rem; text-decoration: none; }
   </style>
@@ -28,33 +49,29 @@
 </header>
 
 <section class="projects">
-  <div class="project-card">
+  <a href="01-SQL-Customer-Churn/" class="project-card">
     <img src="01-SQL-Customer-Churn/project1_thumbnail.png" alt="Customer Churn">
     <h2>📉 Customer Churn Analysis</h2>
     <p>SQL-driven telecom churn case study. Extracted key metrics, identified high-risk customer groups, and built retention insights from 7,000+ records.</p>
-    <a href="01-SQL-Customer-Churn/">View Project →</a>
-  </div>
+  </a>
 
-  <div class="project-card">
+  <a href="02-SQL-Superstore-Sales/" class="project-card">
     <img src="02-SQL-Superstore-Sales/project2_thumbnail.png" alt="Superstore Sales">
     <h2>📊 Superstore Sales Analysis</h2>
     <p>SQL + Python analysis of Superstore dataset. Sales & profit by category, regional performance, top customers, and shipping mode profitability with matplotlib charts.</p>
-    <a href="02-SQL-Superstore-Sales/">View Project →</a>
-  </div>
+  </a>
 
-  <div class="project-card">
+  <a href="03-SQL-MusicStore-Analysis/" class="project-card">
     <img src="03-SQL-MusicStore-Analysis/project3_thumbnail.png" alt="Music Store">
     <h2>🎵 Music Store Analysis</h2>
     <p>Advanced SQL joins, CTEs, and window functions on the Chinook DB. Analyzed top artists, revenue by genre, customer lifetime value, and monthly revenue trends.</p>
-    <a href="03-SQL-MusicStore-Analysis/">View Project →</a>
-  </div>
+  </a>
 
-  <div class="project-card">
+  <a href="04-SQL-HR-Attrition-Analysis/" class="project-card">
     <img src="04-SQL-HR-Attrition-Analysis/project4_thumbnail.png" alt="HR Attrition">
     <h2>👥 HR Attrition Analysis</h2>
     <p>SQL + Python EDA project analyzing IBM HR dataset. Explored attrition by department, age band, salary levels, and tenure with actionable business insights.</p>
-    <a href="04-SQL-HR-Attrition-Analysis/">View Project →</a>
-  </div>
+  </a>
 </section>
 
 <footer>
