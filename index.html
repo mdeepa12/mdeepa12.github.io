@@ -2,151 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Data Analyst Portfolio - mdeepa12</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analyst Portfolio – Deepa</title>
   <style>
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f7fa;
-      color: #333;
-    }
-    header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 40px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 40px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      padding: 20px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-    }
-    .card h2 {
-      margin: 0 0 10px;
-      font-size: 1.3rem;
-      color: #2c3e50;
-    }
-    .card p {
-      font-size: 0.95rem;
-      color: #555;
-      margin-bottom: 15px;
-    }
-    .card a {
-      text-decoration: none;
-      color: #0077cc;
-      font-weight: bold;
-    }
-    footer {
-      background: #2c3e50;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-    }
-    footer a {
-      color: #1abc9c;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; }
+    header { background: #2c3e50; color: white; padding: 2rem; text-align: center; }
+    header h1 { margin: 0; }
+    header p { font-size: 1.2rem; margin-top: 0.5rem; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 2rem; }
+    .project-card { background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1rem; transition: transform 0.2s; }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card img { width: 100%; border-radius: 6px; margin-bottom: 1rem; }
+    .project-card h2 { margin: 0.5rem 0; }
+    .project-card p { font-size: 0.95rem; line-height: 1.4; }
+    .project-card a { display: inline-block; margin-top: 0.5rem; text-decoration: none; color: #2980b9; font-weight: bold; }
+    footer { text-align: center; padding: 1.5rem; background: #2c3e50; color: white; }
+    footer a { color: #1abc9c; margin: 0 0.5rem; text-decoration: none; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>👋 Hi, I'm Deepa</h1>
-    <p>Welcome to my <strong>Data Analyst Portfolio</strong> — showcasing SQL, Python, and BI projects.</p>
-  </header>
 
-  <main class="container">
-    <div class="project-card">
-      <h2>📊 SQL Customer Churn Analysis</h2>
-      <p>SQL analysis of telecom customer churn with PostgreSQL. 
-      Includes insights on contracts, payments, and high-risk segments.</p>
-      <a href="https://github.com/mdeepa12/mdeepa12.github.io/tree/main/01-SQL-Customer-Churn">View Project →</a>
-    </div>
-    <div class="project-card">
-      <h2>📊 Superstore Sales Analysis</h2>
-      <p>
-      Combined <strong>SQL + Python</strong> analysis of the popular Superstore dataset.  
-      Extracted insights on sales trends, top customers, product profitability,  
-      and regional performance, with SQL queries and matplotlib visualizations.
-      </p>
-      <a href="02-SQL-Superstore-Sales/">View Project →</a>
-    </div>
-    <div class="project-card">
-      <img src="03-SQL-MusicStore-Analysis/project3_thumbnail.png" alt="Music Store Analysis Thumbnail" style="width:100%;max-width:400px;border-radius:8px;">
-      <h2>🎵 Music Store Analysis</h2>
-      <p>
-      Advanced <strong>SQL joins, subqueries, and window functions</strong> using the Chinook Database.  
-      Analyzed <em>top artists, genres, customer lifetime value, and monthly revenue trends</em>,  
-      with visualizations in Python (pandas + matplotlib).
-      </p>
-      <a href="03-SQL-MusicStore-Analysis/">View Project →</a>
-    </div>
-    <div class="project-card">
-       <h2>👥 HR Attrition Analysis</h2>
-      <p>
-      SQL + Python EDA project analyzing <strong>employee attrition patterns</strong> from the IBM HR dataset.  
-      Explored attrition trends by <em>department, job role, age, salary, and tenure</em>,  
-      with actionable insights visualized in charts.
-      </p>
-      <a href="04-SQL-HR-Attrition-Analysis/">View Project →</a>
-    </div>
+<header>
+  <h1>Deepa – Data Analyst</h1>
+  <p>Data Analyst with 5+ years of experience in SQL, Python, and BI. Skilled at uncovering business insights through advanced SQL, Python-based analysis, and visual storytelling.</p>
+</header>
 
-    <div class="card">
-      <h2>📊 SQL Case Study – Chinook</h2>
-      <p>Analyzed music store sales using SQL joins, aggregations, and window functions.</p>
-      <a href="01-SQL-Chinook/README.md">View Project →</a>
-    </div>
+<section class="projects">
+  <div class="project-card">
+    <img src="01-SQL-Customer-Churn/project1_thumbnail.png" alt="Customer Churn">
+    <h2>📉 Customer Churn Analysis</h2>
+    <p>SQL-driven telecom churn case study. Extracted key metrics, identified high-risk customer groups, and built retention insights from 7,000+ records.</p>
+    <a href="01-SQL-Customer-Churn/">View Project →</a>
+  </div>
 
-    <div class="card">
-      <h2>🐍 Python EDA – Airbnb NYC</h2>
-      <p>Data cleaning & exploratory analysis with Pandas and Seaborn to find pricing insights.</p>
-      <a href="02-Python-Airbnb-EDA/README.md">View Project →</a>
-    </div>
+  <div class="project-card">
+    <img src="02-SQL-Superstore-Sales/project2_sales_by_year.png" alt="Superstore Sales">
+    <h2>📊 Superstore Sales Analysis</h2>
+    <p>SQL + Python analysis of Superstore dataset. Sales & profit by category, regional performance, top customers, and shipping mode profitability with matplotlib charts.</p>
+    <a href="02-SQL-Superstore-Sales/">View Project →</a>
+  </div>
 
-    <div class="card">
-      <h2>📈 Dashboard – Power BI</h2>
-      <p>Interactive dashboard with KPIs, drilldowns, and filters for dynamic storytelling.</p>
-      <a href="03-Dashboard-PowerBI/README.md">View Project →</a>
-    </div>
+  <div class="project-card">
+    <img src="03-SQL-MusicStore-Analysis/project3_thumbnail.png" alt="Music Store">
+    <h2>🎵 Music Store Analysis</h2>
+    <p>Advanced SQL joins, CTEs, and window functions on the Chinook DB. Analyzed top artists, revenue by genre, customer lifetime value, and monthly revenue trends.</p>
+    <a href="03-SQL-MusicStore-Analysis/">View Project →</a>
+  </div>
 
-    <div class="card">
-      <h2>⚙️ ETL Pipeline – Retail Data</h2>
-      <p>End-to-end ETL workflow with Python, PostgreSQL, SQL queries, and Power BI dashboard.</p>
-      <a href="04-ETL-Pipeline-Retail/README.md">View Project →</a>
-    </div>
-  </main>
+  <div class="project-card">
+    <img src="04-SQL-HR-Attrition-Analysis/project4_thumbnail.png" alt="HR Attrition">
+    <h2>👥 HR Attrition Analysis</h2>
+    <p>SQL + Python EDA project analyzing IBM HR dataset. Explored attrition by department, age band, salary levels, and tenure with actionable business insights.</p>
+    <a href="04-SQL-HR-Attrition-Analysis/">View Project →</a>
+  </div>
+</section>
 
-  <footer>
-    <p>📬 Connect with me: 
-      <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a> | 
-      <a href="https://github.com/mdeepa12" target="_blank">GitHub</a>
-    </p>
-  </footer>
+<footer>
+  <p>Let’s Connect: 
+    <a href="https://linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a> | 
+    <a href="https://github.com/mdeepa12">GitHub</a>
+  </p>
+</footer>
+
 </body>
 </html>
